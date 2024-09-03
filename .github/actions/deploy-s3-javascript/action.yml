@@ -13,6 +13,10 @@ inputs:
     description: 'The folder containing the files to deploy'
     required: true
 
+outputs:
+  website-url:
+    description: 'The URL of the deployed website'
+
 
 runs:
   using: node20

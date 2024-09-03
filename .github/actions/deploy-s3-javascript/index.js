@@ -17,7 +17,8 @@ function run() {
         }
     );
 
-    core.notice('Hello, World!');
+    const website_url = `http://${bucket}.s3-website-${region}.amazonaws.com`;
+    core.setOutput('website-url', website_url);
 }
 
 run();
